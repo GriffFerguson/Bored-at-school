@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Platformer - Embeddable Page | Bored at School</title>
+    <!-- <link rel="shortcut icon" href="TemplateData/favicon.ico"> -->
+    <link rel="stylesheet" href="/meta/unity_agent_styles.css">
+    <link rel="stylesheet" href="/resources/player.css">
+    <script>
+      function sidePanel(element) {
+        var panel = null;
+        if (element == controls) {
+          panel = document.getElementById("controls");
+        }
+        console.log(panel);
+        panel.classList.toggle("open-panel");
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <h1>This site requires JavaScript</h1>
+      <p>To use this site, please make sure you are using a modern browser and enable JavaScript!</p>
+    </noscript>
+    <div id="unity-container" class="unity-desktop">
+      <div class="settings">
+        <a href="/index.html" class="option">
+          <img src="/resources/home.png" alt="home" style="width:80%;margin-left:10%;margin-right:10%;">
+        </a>
+        <div class="option" onclick="sidePanel(controls)">
+          <img src="/resources/controls/a.png" alt="controls" style="width:80%;margin-left:10%;margin-right:10%;">
+        </div>
+        <div class="option"><p>?</p></div>
+        <a href="index.html" class="option"><p>🏫</p></a>
+      </div>
+      <div id="controls">
+        <span><div class="akey"></div> / <div class="left-arrow"></div>  &#8213; Move left</span>
+        <span><div class="dkey"></div> / <div class="right-arrow"></div> 	&#8213; Move right</span>
+        <span><div class="space-key"></div> / <div class="up-arrow"></div> 	&#8213; Jump</span>
+      </div>
+      <canvas id="unity-canvas" width="1600" height="900"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-mobile-warning">
+        WebGL builds are not supported on mobile devices.
+      </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Platformer</div>
+      </div>
+    </div>
+    <script>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/v1_1.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/v1_1.data",
+        frameworkUrl: buildUrl + "/v1_1.framework.js",
+        codeUrl: buildUrl + "/v1_1.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Griffin Ferguson",
+        productName: "Platformer",
+        productVersion: "1.1",
+      };
+    </script>
+    <script src="/meta/unity_loader.js"></script>
+  </body>
+</html>

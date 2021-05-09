@@ -1,0 +1,9 @@
+/* LETTERS */
+.akey{background-image: url(a.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+.dkey{background-image: url(d.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+
+/* UTILITY KEYS */
+.space-key{background-image: url(space.png);height:1em;width:2em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+.right-arrow{background-image: url(right.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+.left-arrow{background-image: url(left.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+.up-arrow{background-image: url(up.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}

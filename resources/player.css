@@ -1,0 +1,97 @@
+@import url(controls/controls.css);
+
+body{margin:0;}
+
+/* SETTINGS */
+.settings{
+    display:grid;
+    background-color:rgba(0,0,0,0.4);
+    grid-template-columns: 25% 25% 25% 25%;
+    min-height:10vh;
+    width:25vw;
+    position:absolute;
+    left:0;
+    bottom:0.5%;
+    color:white;
+}
+
+.option {
+    background: none;
+    margin:0.5em;
+    padding:0.3em;
+    cursor:pointer;
+    transition: background-color 500ms;
+}
+.option img {
+    transition: filter 500ms; 
+    filter: invert(0);
+}
+.option p {
+    font-family: SourceSansPro-Bold;
+    font-size: 3.25vw;
+    text-align:center;
+    margin:0;
+    padding:0;
+    color:white;
+    transition: color 500ms;
+}
+
+.option:hover {background-color: rgba(255, 255, 255, 0.9);}
+.option:hover img {filter: invert(100%)}
+.option:hover p {color:black;}
+
+/* CONTROLS */
+#controls {
+    position:absolute;
+    background-color:rgba(0,0,0,0.6);
+    padding-top:2em;
+    padding-bottom:2em;
+    padding-left:1em;
+    padding-right:1em;
+    width:0vw;
+    left:0;
+    top:0;
+    font-size:1.8em;
+    font-family:SourceSansPro;
+    color:white;
+    white-space: nowrap;
+    transition: width 500ms;
+}
+#controls span{display:block;margin-bottom:1vh;position:relative;}
+
+.open-panel {
+    width: 35vw !important;
+    display:block;
+}
+
+/* NO SCRIPT */
+noscript{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding:1em;
+}
+
+noscript h1 {
+    font-family: SourceSansPro-Bold;
+    color:black;
+    text-align:center;
+}
+
+noscript p {
+    font-family: SourceSansPro;
+    color:black;
+    text-align:center;
+}
+
+/* FONTS */
+@font-face {
+    font-family: SourceSansPro;
+    src:url(SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url(SourceSansPro-Bold.ttf);
+}
