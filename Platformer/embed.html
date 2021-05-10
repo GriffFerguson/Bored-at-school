@@ -7,16 +7,7 @@
     <!-- <link rel="shortcut icon" href="TemplateData/favicon.ico"> -->
     <link rel="stylesheet" href="/meta/unity_agent_styles.css">
     <link rel="stylesheet" href="/resources/player.css">
-    <script>
-      function sidePanel(element) {
-        var panel = null;
-        if (element == controls) {
-          panel = document.getElementById("controls");
-        }
-        console.log(panel);
-        panel.classList.toggle("open-panel");
-      }
-    </script>
+    <script src="/resources/site_scripts.js"></script>
   </head>
   <body>
     <noscript>
@@ -31,13 +22,18 @@
         <div class="option" onclick="sidePanel(controls)">
           <img src="/resources/controls/a.png" alt="controls" style="width:80%;margin-left:10%;margin-right:10%;">
         </div>
-        <div class="option"><p>?</p></div>
+        <div class="option" onclick="sidePanel(about)"><p>?</p></div>
         <a href="index.html" class="option"><p>🏫</p></a>
       </div>
       <div id="controls">
         <span><div class="akey"></div> / <div class="left-arrow"></div>  &#8213; Move left</span>
         <span><div class="dkey"></div> / <div class="right-arrow"></div> 	&#8213; Move right</span>
         <span><div class="space-key"></div> / <div class="up-arrow"></div> 	&#8213; Jump</span>
+        <span><div class="rkey"></div>	&#8213; Reset level</span>
+      </div>
+      <div id="about">
+        <span><b>OBJECTIVE:</b><br>Complete the level and collect as many coins as possible!</span>
+        <span><b>About:</b><br>Name: Platformer<br>Version: 1.1<br>Level count: 4<br><br>Unity WebGL build</span>
       </div>
       <canvas id="unity-canvas" width="1600" height="900"></canvas>
       <div id="unity-loading-bar">

@@ -41,13 +41,9 @@ body{margin:0;}
 .option:hover p {color:black;}
 
 /* CONTROLS */
-#controls {
+#controls, #about {
     position:absolute;
     background-color:rgba(0,0,0,0.6);
-    padding-top:2em;
-    padding-bottom:2em;
-    padding-left:1em;
-    padding-right:1em;
     width:0vw;
     left:0;
     top:0;
@@ -57,12 +53,18 @@ body{margin:0;}
     white-space: nowrap;
     transition: width 500ms;
 }
-#controls span{display:block;margin-bottom:1vh;position:relative;}
+#controls, #about span{display:none;margin-bottom:1vh;position:relative;}
 
 .open-panel {
     width: 35vw !important;
     display:block;
+    padding-top:2em;
+    padding-bottom:2em;
+    padding-left:1em;
+    padding-right:1em;
 }
+
+.display-content span{display:block !important;}
 
 /* NO SCRIPT */
 noscript{

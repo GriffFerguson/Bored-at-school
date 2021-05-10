@@ -1,6 +1,7 @@
 /* LETTERS */
 .akey{background-image: url(a.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
 .dkey{background-image: url(d.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+.rkey{background-image: url(r.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
 
 /* UTILITY KEYS */
 .space-key{background-image: url(space.png);height:1em;width:2em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
