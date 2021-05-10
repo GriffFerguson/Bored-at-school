@@ -53,7 +53,7 @@ body{margin:0;}
     white-space: nowrap;
     transition: width 500ms;
 }
-#controls, #about span{display:none;margin-bottom:1vh;position:relative;}
+#controls span, #about span{display:none;margin-bottom:1vh;position:relative;font-size:1.25vw;}
 
 .open-panel {
     width: 35vw !important;
