@@ -72,7 +72,7 @@ function embedCodeCopy() {
 	var path = window.location.pathname;
 	var dir = path.substring(0, path.lastIndexOf('/'));
 	var loc = "https://boredatschool.netlify.app" + dir + "/embed.html"
-	var code = '<iframe src="' + loc + '" style="width:50vh;height:50vh;display:block;"></iframe>';
+	var code = '<iframe src="' + loc + '" style="min-width:50vw;min-height:50vh;display:block;"></iframe>';
 	navigator.clipboard.writeText(code);
 	document.getElementById("embed-copy").style.opacity = "1";
 	console.log("wrote to clipboad: " + code);
