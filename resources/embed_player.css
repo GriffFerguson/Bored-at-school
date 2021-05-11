@@ -1,14 +1,5 @@
 @import url(controls/controls.css);
-
-body{margin:0;}
-.player {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-.icon-small{background-image: url(icon.png);height:1.2em;width:1.2em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
-.icon-large{background-image: url(icon.png);height:3.5vw;width:3.5vw;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+@import url(primary.css);
 
 /* SETTINGS */
 .settings{
@@ -74,35 +65,3 @@ body{margin:0;}
 }
 
 .display-content span{display:block !important;}
-
-/* NO SCRIPT */
-noscript{
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform: translateX(-50%) translateY(-50%);
-    padding:1em;
-}
-
-noscript h1 {
-    font-family: SourceSansPro-Bold;
-    color:black;
-    text-align:center;
-}
-
-noscript p {
-    font-family: SourceSansPro;
-    color:black;
-    text-align:center;
-}
-
-/* FONTS */
-@font-face {
-    font-family: SourceSansPro;
-    src:url(SourceSansPro-Regular.ttf);
-}
-
-@font-face {
-    font-family: SourceSansPro-Bold;
-    src: url(SourceSansPro-Bold.ttf);
-}
