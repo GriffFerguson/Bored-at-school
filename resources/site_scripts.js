@@ -48,9 +48,19 @@ function embed() {
 	var dir = path.substring(0, path.lastIndexOf('/'));
 	var location = "https://boredatschool.netlify.app" + dir + "/embed.html";
 	document.getElementById("embed-link").innerHTML +=
-	'<span style="text-decoration:underline;">' + location + '</span>'
+	'<span id="embed-link-header">Your embed link (click to copy):</span><br>' +
+	'<span id="embed-link-span" onclick="embedCopy()">' + location + '</span>';
 }
 
 function toggleEmbed() {
 	document.getElementById("embed-link").classList.toggle("open-embed");
+}
+function embedCopy() {
+	var path = window.location.pathname;
+	var dir = path.substring(0, path.lastIndexOf('/'));
+	var loc = "https://boredatschool.netlify.app" + dir + "/embed.html"
+	var location = new Blob(loc, {type : 'text/html'});
+	var embedLink = [new ClipboardItem({ "text/plain": location })];
+	navigator.clipboard.writeText(embedLink);
+	console.log("wrote to clipboad");
 }

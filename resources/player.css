@@ -69,16 +69,44 @@
 
 #embed-link {
     position:fixed;
-    top:0;
+    top:-5%;
     left:50%;
     transform: translateX(-50%);
     height:0vw;
     width:30vw;
     transition: height 500ms;
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.8);
     display:block;
+    color:white;
+    z-index:99;
+    font-family: SourceSansPro;
+    padding:1em;
+}
+
+#embed-link-span {
+    position:absolute;
+    text-decoration:underline;
+    bottom:50%;
+    cursor:pointer;
+}
+
+#embed-link-header {
+    text-decoration:none;
+    bottom:66%;
+    position:absolute;
+}
+
+#embed-copy {
+    opacity:0;
+    bottom:3%;
+    left:3%;
+    position:absolute;
+    border:0.1em solid rgb(0, 94, 0);
+    background-color: rgb(72, 240, 72);
+    color:rgb(0, 94, 0);
 }
 
 .open-embed {
     height:8vh !important;
+    top:0 !important;
 }
