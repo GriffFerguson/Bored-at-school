@@ -5,9 +5,11 @@
 .settings{
     display:grid;
     background-color:rgba(0,0,0,0.4);
-    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-columns: 25% 25% 25% 25%;
+    width:25vw; */
+    grid-template-columns: 33% 33% 33%;
+    width: 18.75vw;
     min-height:10vh;
-    width:25vw;
     position:absolute;
     left:0;
     bottom:0.5%;
