@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Platformer | Bored@school</title>
-		<link rel="stylesheet" href="/meta/unity_agent_styles.css">
-		<link rel="stylesheet" href="/resources/player.css">
-		<link rel="icon" href="/resources/icon_256.png">
-		<script src="/resources/site_scripts.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Platformer | Bored@school</title>
+	<link rel="stylesheet" href="/meta/unity_agent_styles.css">
+	<link rel="stylesheet" href="/resources/player.css">
+	<link rel="icon" href="/resources/icon_256.png">
+	<script src="/resources/site_scripts.js"></script>
 </head>
 <body onload="embed()">
-		<noscript>
-				<div class="noscript-container">
-					<div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div>
-					<h2>This site requires JavaScript</h2>
-					<p>To use this site, please make sure you are using a modern browser and have JavaScript enabled!</p>
-				</div>
-			</noscript>
-			<div id="embed-link">
-				<span id="embed-link-header">Your embed link (click to copy):</span><br>
-				<span id="embed-code-header">OR<br>Copy this code into your site (click to copy):</span>
-				<div id="embed-code" onclick="embedCodeCopy()"></div>
-				<span style="position:absolute;bottom:6%;right:3%;cursor:pointer;" onclick="toggleEmbed()">Exit</span>
-				<span id="embed-copy">Copied!</span>
-			</div>
-			<section class="player">
-			<div id="unity-container" class="unity-desktop">
-				<a class="playerbadgewrap" href="/index.html" target="_parent"><div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div></a>
-				<canvas id="unity-canvas" width="1600" height="900"></canvas>
-				<div id="unity-loading-bar">
-					<div id="unity-logo"></div>
-					<div id="unity-progress-bar-empty">
-						<div id="unity-progress-bar-full"></div>
-					</div>
-				</div>
-				<div id="unity-mobile-warning">
-					WebGL builds are not supported on mobile devices.
-				</div>
-				<div id="unity-footer">
-					<div id="unity-webgl-logo"></div>
-					<div id="unity-fullscreen-button"></div>
-					<div id="unity-build-title">Platformer</div>
+	<noscript>
+		<div class="noscript-container">
+			<div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div>
+			<h2>This site requires JavaScript</h2>
+			<p>To use this site, please make sure you are using a modern browser and have JavaScript enabled!</p>
+		</div>
+	</noscript>
+	<div id="embed-link">
+		<span id="embed-link-header">Your embed link (click to copy):</span><br>
+		<span id="embed-code-header">OR<br>Copy this code into your site (click to copy):</span>
+		<div id="embed-code" onclick="embedCodeCopy()"></div>
+		<span style="position:absolute;bottom:6%;right:3%;cursor:pointer;" onclick="toggleEmbed()">Exit</span>
+		<span id="embed-copy">Copied!</span>
+	</div>
+	<section class="player">
+		<div id="unity-container" class="unity-desktop">
+			<a class="playerbadgewrap" href="/index.html" target="_parent"><div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div></a>
+			<canvas id="unity-canvas" width="1600" height="900"></canvas>
+			<div id="unity-loading-bar">
+				<div id="unity-logo"></div>
+				<div id="unity-progress-bar-empty">
+					<div id="unity-progress-bar-full"></div>
 				</div>
 			</div>
-			<script>
-				var buildUrl = "Build";
-				var loaderUrl = buildUrl + "/v1_1.loader.js";
-				var config = {
-					dataUrl: buildUrl + "/v1_1.data",
-					frameworkUrl: buildUrl + "/v1_1.framework.js",
-					codeUrl: buildUrl + "/v1_1.wasm",
-					streamingAssetsUrl: "StreamingAssets",
-					companyName: "Griffin Ferguson",
-					productName: "Platformer",
-					productVersion: "1.1",
-				};
-			</script>
-			<script src="/meta/unity_loader.js"></script>
-			</section>
-			<section class="data">
-				<hr>
-				<h1>Platformer</h1>
-				<article>
-					<h2>Objective:</h2>
-					<p>Complete the level and collect as many coins as possible!</p>
-				</article>
-				<article>
-					<h2>Controls:</h2>
-					<div class="controls">
-						<span><div class="akey" aria-label="a key"></div> / <div class="left-arrow" aria-label="left arrow key"></div> &#8213; Move left</span>
-						<span><div class="dkey" aria-label="d key"></div> / <div class="right-arrow" aria-label="right arrow key"></div> &#8213; Move right</span>
-						<span><div class="space-key" aria-label="space key"></div> / <div class="up-arrow" aria-label="up arrow key"></div> &#8213; Jump</span>
-						<span><div class="rkey" aria-label="r key"></div> &#8213; Reset level</span>
-					</div>
-				</article>
-				<article>
-					<h2>About:</h2>
-					<p>Name: Platformer<br>Version: 1.1<br>Level count: 4<br><br>Unity 2020.3.5f1 WebGL build<br></p>
-					<p onclick="toggleEmbed()" style="text-align: right;cursor:pointer;">&#60;&#47;&#62;&nbsp;&nbsp;&#8213;&nbsp;&nbsp;Embed this game</p>
-				</article>
-				<hr>
-			</section>
+			<div id="unity-mobile-warning">WebGL builds are not supported on mobile devices.</div>
+			<div id="unity-footer">
+				<div id="unity-webgl-logo"></div>
+				<div id="unity-fullscreen-button"></div>
+				<div id="unity-build-title">Platformer</div>
+			</div>
+		</div>
+		<script>
+			var buildUrl = "Build";
+			var loaderUrl = buildUrl + "/v1_1.loader.js";
+			var config = {
+				dataUrl: buildUrl + "/v1_1.data",
+				frameworkUrl: buildUrl + "/v1_1.framework.js",
+				codeUrl: buildUrl + "/v1_1.wasm",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "Griffin Ferguson",
+				productName: "Platformer",
+				productVersion: "1.1",
+			};
+		</script>
+		<script src="/meta/unity_loader.js"></script>
+	</section>
+	<section class="data">
+		<hr>
+		<h1>Platformer</h1>
+		<article>
+			<h2>Objective:</h2>
+			<p>Complete the level and collect as many coins as possible!</p>
+		</article>
+		<article>
+			<h2>Controls:</h2>
+			<div class="controls">
+				<span><div class="akey" aria-label="a key"></div> / <div class="left-arrow" aria-label="left arrow key"></div> &#8213; Move left</span>
+				<span><div class="dkey" aria-label="d key"></div> / <div class="right-arrow" aria-label="right arrow key"></div> &#8213; Move right</span>
+				<span><div class="space-key" aria-label="space key"></div> / <div class="up-arrow" aria-label="up arrow key"></div> &#8213; Jump</span>
+				<span><div class="rkey" aria-label="r key"></div> &#8213; Reset level</span>
+			</div>
+		</article>
+		<article>
+			<h2>About:</h2>
+			<p>Name: Platformer<br>Version: 1.1<br>Level count: 4<br><br>Unity 2020.3.5f1 WebGL build<br></p>
+			<p onclick="toggleEmbed()" style="text-align: right;cursor:pointer;">&#60;&#47;&#62;&nbsp;&nbsp;&#8213;&nbsp;&nbsp;Embed this game</p>
+		</article>
+		<hr>
+	</section>
 </body>
 </html>
