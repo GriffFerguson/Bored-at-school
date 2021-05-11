@@ -54,6 +54,7 @@ function embed() {
 
 function toggleEmbed() {
 	document.getElementById("embed-link").classList.toggle("open-embed");
+	document.getElementById("embed-copy").style.opacity = "0";
 }
 function embedCopy() {
 	var path = window.location.pathname;
