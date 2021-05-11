@@ -98,12 +98,14 @@
 
 #embed-copy {
     opacity:0;
-    bottom:3%;
+    bottom:6.5%;
     left:3%;
     position:absolute;
-    border:0.1em solid rgb(0, 94, 0);
-    background-color: rgb(72, 240, 72);
-    color:rgb(0, 94, 0);
+    border:0.1em solid rgb(10, 235, 10);
+    background-color: rgb(216, 253, 216);
+    color:rgb(5, 138, 5);
+    transition: opacity 500ms;
+    padding:0.5em;
 }
 
 .open-embed {

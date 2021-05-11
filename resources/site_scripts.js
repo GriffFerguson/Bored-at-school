@@ -59,8 +59,7 @@ function embedCopy() {
 	var path = window.location.pathname;
 	var dir = path.substring(0, path.lastIndexOf('/'));
 	var loc = "https://boredatschool.netlify.app" + dir + "/embed.html"
-	var location = new Blob(loc, {type : 'text/html'});
-	var embedLink = [new ClipboardItem({ "text/plain": location })];
-	navigator.clipboard.writeText(embedLink);
-	console.log("wrote to clipboad");
+	navigator.clipboard.writeText(loc);
+	document.getElementById("embed-copy").style.opacity = "1";
+	console.log("wrote to clipboad:" + loc);
 }
