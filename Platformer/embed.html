@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Platformer - Embeddable Page | Bored at School</title>
+    <title>Platformer - Embeddable Page | Bored@school</title>
     <!-- <link rel="shortcut icon" href="TemplateData/favicon.ico"> -->
     <link rel="stylesheet" href="/meta/unity_agent_styles.css">
     <link rel="stylesheet" href="/resources/player.css">
+    <link rel="icon" href="/resources/icon.png">
     <script src="/resources/site_scripts.js"></script>
   </head>
   <body>
@@ -14,18 +15,20 @@
       <h1>This site requires JavaScript</h1>
       <p>To use this site, please make sure you are using a modern browser and have JavaScript enabled!</p>
     </noscript>
+    <section class="player">
     <div id="unity-container" class="unity-desktop">
       <div class="settings">
-        <a href="/index.html" class="option">
+        <a href="/index.html" class="option" target="_blank">
           <img src="/resources/home.png" alt="home" style="width:80%;margin-left:10%;margin-right:10%;">
         </a>
         <div class="option" onclick="sidePanel(controls, 'open')" id="control-button">
           <img src="/resources/controls/a.png" alt="controls" style="width:80%;margin-left:10%;margin-right:10%;">
         </div>
         <div class="option" onclick="sidePanel(about, 'open')" id="about-button"><p>?</p></div>
-        <a href="index.html" class="option"><p>🏫</p></a>
+        <a href="index.html" class="option" target="_blank"><div class="icon-large" style="margin-left:0.75vw;"></div></a>
       </div>
       <div id="controls">
+        <span><b>CONTROLS:</b></span>
         <span><div class="akey"></div> / <div class="left-arrow"></div>  &#8213; Move left</span>
         <span><div class="dkey"></div> / <div class="right-arrow"></div> 	&#8213; Move right</span>
         <span><div class="space-key"></div> / <div class="up-arrow"></div> 	&#8213; Jump</span>
@@ -33,7 +36,7 @@
       </div>
       <div id="about">
         <span><b>OBJECTIVE:</b><br>Complete the level and collect as many coins as possible!</span>
-        <span><b>About:</b><br>Name: Platformer<br>Version: 1.1<br>Level count: 4<br><br>Unity WebGL build</span>
+        <span><b>About:</b><br>Name: Platformer<br>Version: 1.1<br>Level count: 4<br><br>Unity 2020.3.5f1 WebGL build<br><div class="icon-small"></div>&nbsp;&nbsp;A project by Bored@school</span>
       </div>
       <canvas id="unity-canvas" width="1600" height="900"></canvas>
       <div id="unity-loading-bar">
@@ -65,5 +68,6 @@
       };
     </script>
     <script src="/meta/unity_loader.js"></script>
+    </section>
   </body>
 </html>
