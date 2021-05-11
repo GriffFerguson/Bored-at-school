@@ -5,7 +5,7 @@ body{margin:0;background-color: rgb(223, 224, 231);}
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-.icon-small{background-image: url(icon.png);height:1.2em;width:1.2em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+.icon-small{background-image: url(icon_512.png);height:1.2em;width:1.2em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
 .icon-large{background-image: url(icon.png);height:3.5vw;width:3.5vw;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
 .badge{
     font-family: SourceSansPro-Bold;
