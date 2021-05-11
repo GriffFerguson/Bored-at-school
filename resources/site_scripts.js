@@ -77,3 +77,6 @@ function embedCodeCopy() {
 	document.getElementById("embed-copy").style.opacity = "1";
 	console.log("wrote to clipboad:" + code);
 }
+
+//FOOTER
+//Work on this later I ran out of time haha

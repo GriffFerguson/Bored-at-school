@@ -16,6 +16,7 @@ body{margin:0;background-color: rgb(223, 224, 231);}
 .badge * {margin:0;display:inline-block;}
 .playerbadgewrap{padding:0.75em;padding-bottom:1em;padding-top:0.1em;background-color:rgba(0,0,0,0.4);bottom:0.5%;right:0;position:absolute;}
 .playerbadgewrap .badge{color:white !important;}
+.badge:hover{color:black !important;}
 
 h1 {
     font-family: SourceSansPro-Bold;
@@ -32,6 +33,37 @@ p {
     font-family: SourceSansPro;
     color:black;
     text-align:center;
+}
+
+hr{
+    background-color:black;
+    height:0.5em !important;
+}
+
+footer {
+    position:absolute;
+    background-color: rgb(184, 184, 184);
+    width:100%;
+    display:grid;
+    grid-template-columns: 25% 41% 33%;
+    padding-top:0.75em;
+    padding-bottom:0.75em;
+    bottom:0;
+}
+
+footer p {
+    font-size: 0.85em;
+}
+
+footer a {
+    text-decoration: underline;
+    text-decoration-style:dotted;
+    color:black;
+}
+
+footer a:hover {
+    text-decoration-style:solid;
+    color:blue;
 }
 
 /* NO SCRIPT */

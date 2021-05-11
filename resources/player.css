@@ -99,11 +99,6 @@ article:last-of-type{
     border-bottom:0.18em solid black;
 }
 
-hr{
-    background-color:black;
-    height:0.5em !important;
-}
-
 .controls {
     zoom:95%;
     display:block;
