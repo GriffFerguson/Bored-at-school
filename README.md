@@ -1,4 +1,4 @@
-![icon](https://boredatschool.netlify.app/resources/icon.png)
+![icon](https://boredatschool.netlify.app/resources/icon_512.png)
 # Bored@school
 [![Netlify Status](https://api.netlify.com/api/v1/badges/de576de5-5f9a-4493-996e-3aa895dc4df8/deploy-status)](https://app.netlify.com/sites/boredatschool/deploys)
 
