@@ -65,7 +65,7 @@ function embedLinkCopy() {
 	var loc = "https://boredatschool.netlify.app" + dir + "/embed.html"
 	navigator.clipboard.writeText(loc);
 	document.getElementById("embed-copy").style.opacity = "1";
-	console.log("wrote to clipboad:" + loc);
+	console.log("wrote to clipboad: " + loc);
 }
 
 function embedCodeCopy() {
@@ -75,8 +75,5 @@ function embedCodeCopy() {
 	var code = '<iframe src="' + loc + '" style="width:50vh;height:50vh;display:block;"></iframe>';
 	navigator.clipboard.writeText(code);
 	document.getElementById("embed-copy").style.opacity = "1";
-	console.log("wrote to clipboad:" + code);
+	console.log("wrote to clipboad: " + code);
 }
-
-//FOOTER
-//Work on this later I ran out of time haha

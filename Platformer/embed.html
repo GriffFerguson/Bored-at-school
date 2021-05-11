@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Platformer - Embeddable Page | Bored@school</title>
-    <link rel="stylesheet" href="/meta/unity_agent_styles.css">
-    <link rel="stylesheet" href="/resources/player.css">
-    <link rel="icon" href="/resources/icon_256.png">
-    <script src="/resources/site_scripts.js"></script>
-  </head>
-  <body>
-    <noscript>
-      <div class="noscript-container">
-        <div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div>
-        <h2>This site requires JavaScript</h2>
-        <p>To use this site, please make sure you are using a modern browser and have JavaScript enabled!</p>
-      </div>
-    </noscript>
-    <section class="player">
-    <div id="unity-container" class="unity-desktop">
-      <div class="settings-embed">
-        <div class="option" onclick="sidePanel(controls, 'open')" id="control-button">
-          <img src="/resources/controls/a.png" alt="controls" style="width:80%;margin-left:10%;margin-right:10%;">
-        </div>
-        <div class="option" onclick="sidePanel(about, 'open')" id="about-button"><p>?</p></div>
-        <a href="index.html" class="option" target="_blank"><div class="icon-large" style="margin-left:0.75vw;"></div></a>
-      </div>
-      <div id="controls">
-        <span><b>CONTROLS:</b></span>
-        <span><div class="akey" aria-label="a key"></div> / <div class="left-arrow" aria-label="left arrow key"></div> &#8213; Move left</span>
-            <span><div class="dkey" aria-label="d key"></div> / <div class="right-arrow" aria-label="right arrow key"></div> &#8213; Move right</span>
-            <span><div class="space-key" aria-label="space key"></div> / <div class="up-arrow" aria-label="up arrow key"></div> &#8213; Jump</span>
-            <span><div class="rkey" aria-label="r key"></div>	&#8213; Reset level</span>
-      </div>
-      <div id="about">
-        <span><b>OBJECTIVE:</b><br>Complete the level and collect as many coins as possible!</span>
-        <span><b>About:</b><br>Name: Platformer<br>Version: 1.1<br>Level count: 4<br><br>Unity 2020.3.5f1 WebGL build<br><div class="icon-small"></div>&nbsp;&nbsp;A project by Bored@school</span>
-      </div>
-      <a class="playerbadgewrap" href="/index.html" target="_blank"><div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div></a>
-      <canvas id="unity-canvas" width="1600" height="900"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-mobile-warning">
-        WebGL builds are not supported on mobile devices.
-      </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Platformer</div>
-      </div>
-    </div>
-    <script>
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/v1_1.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/v1_1.data",
-        frameworkUrl: buildUrl + "/v1_1.framework.js",
-        codeUrl: buildUrl + "/v1_1.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Griffin Ferguson",
-        productName: "Platformer",
-        productVersion: "1.1",
-      };
-    </script>
-    <script src="/meta/unity_loader.js"></script>
-    </section>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Platformer - Embeddable Page | Bored@school</title>
+		<link rel="stylesheet" href="/meta/unity_agent_styles.css">
+		<link rel="stylesheet" href="/resources/player.css">
+		<link rel="icon" href="/resources/icon_256.png">
+		<script src="/resources/site_scripts.js"></script>
+	</head>
+	<body>
+		<noscript>
+			<div class="noscript-container">
+				<div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div>
+				<h2>This site requires JavaScript</h2>
+				<p>To use this site, please make sure you are using a modern browser and have JavaScript enabled!</p>
+			</div>
+		</noscript>
+		<section class="player">
+		<div id="unity-container" class="unity-desktop">
+			<div class="settings-embed">
+				<div class="option" onclick="sidePanel(controls, 'open')" id="control-button">
+					<img src="/resources/controls/a.png" alt="controls" style="width:80%;margin-left:10%;margin-right:10%;">
+				</div>
+				<div class="option" onclick="sidePanel(about, 'open')" id="about-button"><p>?</p></div>
+				<a href="index.html" class="option" target="_blank"><div class="icon-large" style="margin-left:0.75vw;"></div></a>
+			</div>
+			<div id="controls">
+				<span><b>CONTROLS:</b></span>
+				<span><div class="akey" aria-label="a key"></div> / <div class="left-arrow" aria-label="left arrow key"></div> &#8213; Move left</span>
+				<span><div class="dkey" aria-label="d key"></div> / <div class="right-arrow" aria-label="right arrow key"></div> &#8213; Move right</span>
+				<span><div class="space-key" aria-label="space key"></div> / <div class="up-arrow" aria-label="up arrow key"></div> &#8213; Jump</span>
+				<span><div class="rkey" aria-label="r key"></div>	&#8213; Reset level</span>
+			</div>
+			<div id="about">
+				<span><b>OBJECTIVE:</b><br>Complete the level and collect as many coins as possible!</span>
+				<span><b>About:</b><br>Name: Platformer<br>Version: 1.1<br>Level count: 4<br><br>Unity 2020.3.5f1 WebGL build<br><div class="icon-small"></div>&nbsp;&nbsp;A project by Bored@school</span>
+			</div>
+			<a class="playerbadgewrap" href="/index.html" target="_blank"><div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div></a>
+			<canvas id="unity-canvas" width="1600" height="900"></canvas>
+			<div id="unity-loading-bar">
+				<div id="unity-logo"></div>
+				<div id="unity-progress-bar-empty">
+					<div id="unity-progress-bar-full"></div>
+				</div>
+			</div>
+			<div id="unity-mobile-warning">
+				WebGL builds are not supported on mobile devices.
+			</div>
+			<div id="unity-footer">
+				<div id="unity-webgl-logo"></div>
+				<div id="unity-fullscreen-button"></div>
+				<div id="unity-build-title">Platformer</div>
+			</div>
+		</div>
+		<script>
+			var buildUrl = "Build";
+			var loaderUrl = buildUrl + "/v1_1.loader.js";
+			var config = {
+				dataUrl: buildUrl + "/v1_1.data",
+				frameworkUrl: buildUrl + "/v1_1.framework.js",
+				codeUrl: buildUrl + "/v1_1.wasm",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "Griffin Ferguson",
+				productName: "Platformer",
+				productVersion: "1.1",
+			};
+		</script>
+		<script src="/meta/unity_loader.js"></script>
+		</section>
+	</body>
 </html>
