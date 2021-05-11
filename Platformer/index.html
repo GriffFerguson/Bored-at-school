@@ -18,19 +18,14 @@
         </div>
       </noscript>
       <div id="embed-link">
-        <span style="position:absolute;bottom:3%;right:3%;cursor:pointer;" onclick="toggleEmbed()">Exit</span>
+        <span id="embed-link-header">Your embed link (click to copy):</span><br>
+        <span id="embed-code-header">OR<br>Copy this code into your site (click to copy):</span>
+        <div id="embed-code" onclick="embedCodeCopy()"></div>
+        <span style="position:absolute;bottom:6%;right:3%;cursor:pointer;" onclick="toggleEmbed()">Exit</span>
         <span id="embed-copy">Copied!</span>
       </div>
       <section class="player">
       <div id="unity-container" class="unity-desktop">
-        <div id="controls">
-          <span><b>CONTROLS:</b></span>
-          
-        </div>
-        <div id="about">
-          <span><b>OBJECTIVE:</b><br></span>
-          <span><b>About:</b><br></span>
-        </div>
         <a class="playerbadgewrap" href="/index.html" target="_blank"><div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div></a>
         <canvas id="unity-canvas" width="1600" height="900"></canvas>
         <div id="unity-loading-bar">
@@ -73,10 +68,10 @@
         <article>
           <h2>Controls:</h2>
           <div class="controls">
-            <span><div class="akey"></div> / <div class="left-arrow"></div> &#8213; Move left</span>
-           <span><div class="dkey"></div> / <div class="right-arrow"></div> &#8213; Move right</span>
-            <span><div class="space-key"></div> / <div class="up-arrow"></div> &#8213; Jump</span>
-            <span><div class="rkey"></div>	&#8213; Reset level</span>
+            <span><div class="akey" aria-label="a key"></div> / <div class="left-arrow" aria-label="left arrow key"></div> &#8213; Move left</span>
+            <span><div class="dkey" aria-label="d key"></div> / <div class="right-arrow" aria-label="right arrow key"></div> &#8213; Move right</span>
+            <span><div class="space-key" aria-label="space key"></div> / <div class="up-arrow" aria-label="up arrow key"></div> &#8213; Jump</span>
+            <span><div class="rkey" aria-label="r key"></div>	&#8213; Reset level</span>
           </div>
         </article>
         <article>

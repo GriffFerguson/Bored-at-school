@@ -105,7 +105,7 @@ hr{
 }
 
 .controls {
-    zoom:90%;
+    zoom:95%;
     display:block;
     font-size:1.8em;
     font-family:SourceSansPro;
@@ -133,13 +133,32 @@ hr{
 #embed-link-span {
     position:absolute;
     text-decoration:underline;
-    bottom:50%;
+    bottom:78%;
     cursor:pointer;
 }
 
 #embed-link-header {
     text-decoration:none;
-    bottom:66%;
+    bottom:85%;
+    position:absolute;
+}
+
+#embed-code {
+    background-color:white;
+    color:black;
+    width:96.5%;
+    margin-left:-1em;
+    padding:1%;
+    font-family:monospace;
+    line-break: anywhere;
+    bottom:37%;
+    position:absolute;
+    cursor:default;
+}
+
+#embed-code-header {
+    text-decoration:none;
+    bottom:57%;
     position:absolute;
 }
 
@@ -156,6 +175,6 @@ hr{
 }
 
 .open-embed {
-    height:8vh !important;
+    height:20vh !important;
     top:0 !important;
 }
