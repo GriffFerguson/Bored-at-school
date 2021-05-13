@@ -16,7 +16,6 @@ body{margin:0;background-color: rgb(223, 224, 231);}
 .badge * {margin:0;display:inline-block;}
 .playerbadgewrap{padding:0.75em;padding-bottom:1em;padding-top:0.1em;background-color:rgba(0,0,0,0.4);bottom:0.5%;right:0;position:absolute;}
 .playerbadgewrap .badge{color:white !important;}
-.badge:hover{color:black !important;}
 
 h1 {
     font-family: SourceSansPro-Bold;
@@ -41,7 +40,7 @@ hr{
 }
 
 footer {
-    position:absolute;
+    position:relative;
     background-color: rgb(184, 184, 184);
     width:100%;
     display:grid;
@@ -49,6 +48,7 @@ footer {
     padding-top:0.75em;
     padding-bottom:0.75em;
     bottom:0;
+    margin-top:5vh;
 }
 
 footer p {

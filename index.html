@@ -24,25 +24,28 @@
 		}
 		.game-container {
 			width:100%;
-			height:100%;
+			height:51vh;
 			border:2px solid black;
 			display:grid;
 			grid-template-rows: 55% 45%;
+			text-decoration: none !important;
+			color: black;
 		}
 		.game-container hr {width:100%;height:0.1em;}
-		.game-thumbnail {
+		.game-thumbnail, .game-description {
 			padding: 0.3vw;
 		}
 		.game-thumbnail img {
-			width:14vw;
-			margin-left:1vw;
-			margin-right:1vw;
+			width:100%;
 		}
-		.game-thumbnail h1 {
-			font-family: SourceSansPro-Bold;
-    text-align:center;
-
+		.game-description h1, .game-description p {
+			text-align: left;
+			margin-top:0.3vh;
+			margin-bottom:0.5vh;
+			margin-left:0;
+			margin-right:0;
 		}
+		.badge:hover{color:black !important;}
 	</style>
 </head>
 <body>
@@ -64,13 +67,14 @@
 	<hr>
 	<main id="main">
 		<div class="games">
-			<a class="game-container">
+			<a class="game-container" href="Platformer/index.html">
 				<div class="game-thumbnail">
-
+					<img src="Platformer/thumbnail.png" alt="Platformer">
 				</div>
-				<hr>
 				<div class="game-description">
-					<h1></h1>
+					<hr>
+					<h1>Platformer</h1>
+					<p>Complete the level and collect as many coins as possible!</p>
 				</div>
 			</a>
 		</div>
