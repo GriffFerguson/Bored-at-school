@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Snake Launcher | Bored@school</title>
+	<link rel="stylesheet" href="/resources/standalone_player.css">
+	<link rel="icon" href="/resources/icon_256.png">
+	<script src="/resources/site_scripts.js"></script>
+</head>
+<body onload="embed()">
+	<noscript>
+		<div class="noscript-container">
+			<div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div>
+			<h2>This site requires JavaScript</h2>
+			<p>To use this site, please make sure you are using a modern browser and have JavaScript enabled!</p>
+		</div>
+	</noscript>
+	<div id="embed-link">
+		<span id="embed-link-header">Your embed link (click to copy):</span><br>
+		<span id="embed-code-header">OR<br>Copy this code into your site (click to copy):</span>
+		<div id="embed-code" onclick="embedCodeCopy()"></div>
+		<span style="position:absolute;bottom:6%;right:3%;cursor:pointer;" onclick="toggleEmbed()">Exit</span>
+		<span id="embed-copy">Copied!</span>
+	</div>
+	<section class="player">
+		<div class="launcher-container">
+			<a class="playerbadgewrap" href="/index.html" target="_parent"><div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div></a>
+			<a draggable="false" href="snake.html" target="_parent" class="launcher" style="background-image: url(thumbnail.png);">
+				<div class="launch-details_light">
+					<h1>Snake</h1>
+					<p>Click to launch</p>
+				</div>
+			</a>
+		</div>
+	</section>
+	<section class="data">
+		<hr>
+		<h1>Snake</h1>
+		<article>
+			<h2>Objective:</h2>
+			<p>Complete the level and collect as many coins as possible!</p>
+		</article>
+		<article>
+			<h2>Controls:</h2>
+			<div class="controls">
+				<span><div class="left-arrow" aria-label="left arrow key"></div> &#8213; Move left</span>
+				<span><div class="right-arrow" aria-label="right arrow key"></div> &#8213; Move right</span>
+				<span><div class="up-arrow" aria-label="up arrow key"></div> &#8213; Move up</span>
+			</div>
+		</article>
+		<article>
+			<h2>About:</h2>
+			<p>Name: Snake<br>Version: 0.1<br>Level count: N/A<br></p>
+			<p onclick="toggleEmbed()" style="text-align: right;cursor:pointer;">&#60;&#47;&#62;&nbsp;&nbsp;&#8213;&nbsp;&nbsp;Embed this game</p>
+		</article>
+		<hr>
+	</section>
+</body>
+</html>
