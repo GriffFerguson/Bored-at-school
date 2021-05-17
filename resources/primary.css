@@ -35,6 +35,13 @@ p {
     text-align:center;
 }
 
+a {
+    font-family: SourceSansPro;
+    color:black;
+    text-decoration:underline;
+}
+a:hover{text-decoration-style: double;}
+
 hr{
     background-color:black;
     height:0.5em !important;

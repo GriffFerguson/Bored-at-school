@@ -61,7 +61,7 @@ button:hover {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    color:white;
+    color:white !important;
     font-family: sans-serif;
     text-align:center;
     display:none;
@@ -74,15 +74,22 @@ button:hover {
 #gameOver span{font-weight:initial;margin:0;}
 
 noscript {
-    display:block;
+    display:block !important;
+    position:absolute !important;
+    z-index:999 !important;
+    background:rgba(0,0,0,0.75) !important;
+    text-align: center !important;
+    color:white !important;
+}
+
+noscript p, noscript a {
+    text-align: center !important;
+    color:white !important;
+}
+
+.noscript-cont{
     position:absolute;
-    z-index:999;
-    font-family:sans-serif;
-    transform: translate(-50%,-50%);
-    top:50%;
-    left:50%;
-    width:100vw;
-    height:100vh;
-    background:rgba(0,0,0,0.75);
-    text-align: center;
+    transform: translate(-50%,-50%) !important;
+    top:50% !important;
+    left:50% !important;
 }

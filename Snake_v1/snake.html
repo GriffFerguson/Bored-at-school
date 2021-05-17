@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta rel="charset" charset="utf-8">
-    <title>Snake</title>
-    <link rel="stylesheet" href="resources/style.css">
-    <link rel="stylesheet" href="/resources/standalone_player.css">
-    <script src="resources/script.js"></script>
+	<meta rel="charset" charset="utf-8">
+	<title>Snake | Bored@school</title>
+	<link rel="stylesheet" href="resources/style.css">
+	<link rel="stylesheet" href="/resources/standalone_player.css">
+	<script src="resources/snake.js"></script>
+	<link rel="icon" href="/resources/icon_256.png">
 </head>
 <body>
-    <noscript>
-        <h1>Hey, this site requires JavaScript!</h1>
-        <p>Make sure you're using a modern browser and have JavaScript enabled!</p>
-    </noscript>
-    <a class="playerbadgewrap" href="/index.html" target="_parent"><div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div></a>
-    <p class="scorewrapper">SCORE: <span id="score">0</span></p>
-    <div id="target"></div>
-    <div id="gameOver">
-        <h1>GAME OVER</h1>
-        <p>Final Score: <span id="finalScore"></span></p>
-        <button onclick="location.reload()">Restart</button>
-    </div>
-    <div id="player"></div>
+	<noscript>
+		<div class="noscript-cont">
+			<h1>Hey, this site requires JavaScript!</h1>
+			<p>Make sure you're using a modern browser and have JavaScript enabled!</p>
+			<a href="/Snake_v1/index.html" target="_parent">Go back</a>
+		</div>
+	</noscript>
+	<a class="playerbadgewrap" href="/index.html" target="_parent"><div class="badge"><div class="icon-large"></div><h1>&nbsp;&nbsp;Bored@school</h1></div></a>
+	<p class="scorewrapper">SCORE: <span id="score">0</span></p>
+	<div id="target"></div>
+	<div id="gameOver">
+		<h1>GAME OVER</h1>
+		<p>Final Score: </p><span id="finalScore"></span>
+		<button onclick="location.reload()">Restart</button>
+	</div>
+	<div id="player"></div>
 </body>
 </html>
