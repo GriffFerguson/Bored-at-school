@@ -113,13 +113,14 @@ function getScreenSize() {
 	if (screenDimensions[1] <= 400 ) {incompatible = 'screenHeight';}
 	if (screenDimensions[0] > 550 && incompatible == 'screenWidth') {incompatible = null;}
 	if (screenDimensions[1] > 400 && incompatible == 'screenHeight') {incompatible = null;}
-	console.log("Got new screen size")
 }
 
 function compatibilty() {
-	if (incompatible == 'screenWidth') {alert('Screen width is not compatible')}
-	if (incompatible == 'screenHeight') {alert('Screen height is not compatible')}
-	if (incompatible == 'mobileDevice') {alert('Device type is not compatible')}
+	//if (incompatible == 'screenWidth') {alert('Screen width is not compatible')}
+	//if (incompatible == 'screenHeight') {alert('Screen height is not compatible')}
+	//if (incompatible == 'mobileDevice') {alert('Device type is not compatible');}
+	return WIP;
 }
 
-function getDiagnostics() {console.log("Diagnostic Data:\r\nDevice type: " + deviceType + "\r\nScreen width: " + screenDimensions[0] + "\r\nScreen height: " + screenDimensions[1])}
+//Get diagnostic data
+function getDiagnostics() {console.log("Diagnostic Data:\r\nDevice type: " + deviceType + "\r\nScreen width: " + screenDimensions[0] + "\r\nScreen height: " + screenDimensions[1]);return("Screen size data updated on resize & on page load; device type data retrieved on page load")}
