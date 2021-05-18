@@ -8,3 +8,4 @@
 .right-arrow{background-image: url(right.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
 .left-arrow{background-image: url(left.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
 .up-arrow{background-image: url(up.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
+.down-arrow{background-image: url(down.png);height:1em;width:1em;display:inline-block;background-size: contain;position:relative;transform: translateY(18%);}
