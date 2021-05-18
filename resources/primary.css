@@ -26,6 +26,7 @@ h2 {
     font-family: SourceSansPro-Bold;
     color:black;
     text-align:center;
+    font-size:2.1em;
 }
 
 p {
@@ -33,6 +34,13 @@ p {
     color:black;
     text-align:center;
 }
+
+a {
+    font-family: SourceSansPro;
+    color:black;
+    text-decoration:underline;
+}
+a:hover{text-decoration-style: double;}
 
 hr{
     background-color:black;
@@ -93,4 +101,9 @@ noscript{
 @font-face {
     font-family: SourceSansPro-Bold;
     src: url(SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoMono;
+    src:url(RobotoMono-Variable.ttf);
 }

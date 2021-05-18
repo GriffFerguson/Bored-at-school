@@ -1,74 +1,52 @@
 @import url(controls/controls.css);
 @import url(primary.css);
 
-/* SETTINGS (EMBED ONLY) */
-.settings-embed {
-    display:grid;
-    background-color:rgba(0,0,0,0.4);
-    grid-template-columns: 33% 33% 33%;
-    width: 18.75vw;
-    min-height:10vh;
+/* LAUNCHER */
+.launcher-container {
+    width:90vw;
+    height:90vh;
     position:absolute;
-    left:0;
-    bottom:0.5%;
-    color:white;
+    background-color:black;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
 }
 
-.option {
-    background: none;
-    margin:0.5em;
-    padding:0.3em;
-    cursor:pointer;
-    transition: background-color 500ms;
+.launcher {
+    background-size:cover;
+    background-position: center center;
+    height:100%;
+    width:55%;
+    display: block;
+    margin-left:22.5%;
+    margin-right:22.5%;
     text-decoration: none;
 }
-.option img {
-    transition: filter 500ms; 
-    filter: invert(0);
-}
-.option p {
+
+.launch-details_light {color:white !important;}
+.launch-details_light p {color:white !important;}
+.launch-details_dark {color:black !important;}
+.launch-details_dark p {color:black !important;}
+
+.launch-details_dark h1, .launch-details_light h1 {
+    font-size:6em;
     font-family: SourceSansPro-Bold;
-    font-size: 3.25vw;
-    text-align:center;
     margin:0;
-    padding:0;
-    color:white;
-    transition: color 500ms;
-}
-
-.option:hover {background-color: rgba(255, 255, 255, 0.9);}
-.option:hover img {filter: invert(100%)}
-.option:hover p {color:black;}
-
-/* SIDE PANELS */
-#controls, #about {
     position:absolute;
-    background-color:rgba(0,0,0,0.6);
-    width:0vw;
-    left:0;
-    top:0;
+    left:30%;
+    top:5%;
+}
+.launch-details_dark p, .launch-details_light p {
     font-size:1.8em;
-    font-family:SourceSansPro;
-    color:white;
-    white-space: nowrap;
-    transition: width 500ms;
-    height:40vh;
-    z-index:1999;
-}
-#controls span, #about span{display:none;margin-bottom:1vh;position:relative;font-size:1.25vw;}
-
-.open-panel {
-    width: 35vw !important;
-    display:block;
-    padding-top:2em;
-    padding-bottom:2em;
-    padding-left:1em;
-    padding-right:1em;
+    font-family: SourceSansPro;
+    margin:0;
+    position:absolute;
+    left:30%;
+    top:90%;
 }
 
-.display-content span{display:block !important;}
 
-/* STANDALONE PLAYER */
+/* DATA */
 .data{
     position:absolute;
     top:100%;

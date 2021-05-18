@@ -1,0 +1,97 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: black !important;
+    overflow:hidden;
+    width:100vw;
+    height:100vh;
+}
+
+button {
+    background-color: black;
+    color:white;
+    border:2px solid white;
+    border-radius:5px;
+    font-family:RobotoMono;
+    font-size:1.5em;
+}
+
+button:hover {
+    background-color: rgb(87, 87, 87);
+}
+
+#player, .playersegment {
+    position:absolute;
+    width:1.75vw;
+    height:1.75vw;
+    background-color: rgb(0, 255, 0);
+    transform:translate(-50%,-50%);
+    top:-5%;
+    left:-5%;
+}
+.playersegment {
+    width: 1.7vw !important;
+    height: 1.7vw !important;
+}
+
+#target{
+    position:absolute;
+    width:1.4vw;
+    height:1.45vw;
+    border-radius:1.45vw;
+    background-color:rgb(177, 0, 0);
+    transform:translate(-50%,-50%);
+    top:-5%;
+    left:-5%;
+}
+
+.scorewrapper {
+    position:relative;
+    z-index:99;
+    left: 1.1vw;
+    top:0.5vh;
+    color:white;
+    font-size:1.5em;
+    font-family:RobotoMono;
+    text-align: left;
+}
+.scorewrapper span {font-weight: initial !important;}
+
+#gameOver {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white !important;
+    font-family: RobotoMono;
+    text-align:center;
+    display:none;
+    padding:0.5em;
+    background-color:rgba(0,0,0,0.75);
+    z-index:999;
+}
+#gameOver h1 {font-size:4em;margin:0;}
+#gameOver p{font-size:1.5em;font-weight:1000;margin:0.75em;}
+#gameOver span{font-weight:bold;margin:0;}
+#finalScore{font-weight:initial !important;}
+
+noscript {
+    display:block !important;
+    position:absolute !important;
+    z-index:999 !important;
+    background:rgba(0,0,0,0.75) !important;
+    text-align: center !important;
+    color:white !important;
+}
+
+noscript p, noscript a {
+    text-align: center !important;
+    color:white !important;
+}
+
+.noscript-cont{
+    position:absolute;
+    transform: translate(-50%,-50%) !important;
+    top:50% !important;
+    left:50% !important;
+}
