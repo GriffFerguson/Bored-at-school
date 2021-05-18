@@ -77,3 +77,49 @@ function embedCodeCopy() {
 	document.getElementById("embed-copy").style.opacity = "1";
 	console.log("wrote to clipboad: " + code);
 }
+
+//DETECT SCREEN SIZE & DEVICE TYPE
+var screenDimensions = [0,0];
+var deviceType = null;
+var incompatible = null;
+
+window.onload = function() {
+	getScreenSize();
+	getDeviceType();
+	compatibilty();
+}
+window.addEventListener('resize', () => {getScreenSize();compatibilty();})
+
+function getDeviceType() {
+	deviceType = navigator.platform;
+	if (
+		deviceType == 'iPod' ||
+		deviceType == 'iPhone' ||
+		deviceType == 'iPad' ||
+		deviceType == 'Android' ||
+		deviceType == 'Pike v7.6 release 92' ||
+		deviceType == 'Pike v7.8 release 517' ||
+		deviceType == 'iPhone Simulator' ||
+		deviceType == 'iPad Simulator' ||
+		deviceType == 'iPod Simulator' ||
+		deviceType == 'BlackBerry'
+	) {incompatible = 'mobileDevice';}
+}
+
+function getScreenSize() {
+	screenDimensions[0] = window.innerWidth;
+	screenDimensions[1] = window.innerHeight;
+	if (screenDimensions[0] <= 550 ) {incompatible = 'screenWidth';}
+	if (screenDimensions[1] <= 400 ) {incompatible = 'screenHeight';}
+	if (screenDimensions[0] > 550 && incompatible == 'screenWidth') {incompatible = null;}
+	if (screenDimensions[1] > 400 && incompatible == 'screenHeight') {incompatible = null;}
+	console.log("Got new screen size")
+}
+
+function compatibilty() {
+	if (incompatible == 'screenWidth') {alert('Screen width is not compatible')}
+	if (incompatible == 'screenHeight') {alert('Screen height is not compatible')}
+	if (incompatible == 'mobileDevice') {alert('Device type is not compatible')}
+}
+
+function getDiagnostics() {console.log("Diagnostic Data:\r\nDevice type: " + deviceType + "\r\nScreen width: " + screenDimensions[0] + "\r\nScreen height: " + screenDimensions[1])}

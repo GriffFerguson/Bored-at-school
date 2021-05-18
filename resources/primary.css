@@ -74,17 +74,18 @@ footer a:hover {
     color:blue;
 }
 
-/* NO SCRIPT */
-noscript{
+/* NO SCRIPT & SCREEN SIZE WARNING */
+#compatibilty-warn{display:none !important;}
+noscript, #compatibilty-warn {
     display: block;
-    position:relative;
+    position:absolute;
     width:100%;
-    height:100vh;
+    height:100%;
     z-index:999;
     background-color: white;
 }
 
-.noscript-container {
+.noscript-container, .compatibilty-cont {
     position:absolute;
     left:50%;
     top:50%;
