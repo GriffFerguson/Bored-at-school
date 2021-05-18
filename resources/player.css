@@ -53,6 +53,7 @@
     white-space: nowrap;
     transition: width 500ms;
     height:40vh;
+    z-index:1999;
 }
 #controls span, #about span{display:none;margin-bottom:1vh;position:relative;font-size:1.25vw;}
 

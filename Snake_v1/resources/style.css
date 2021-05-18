@@ -12,7 +12,7 @@ button {
     color:white;
     border:2px solid white;
     border-radius:5px;
-    font-family:monospace;
+    font-family:RobotoMono;
     font-size:1.5em;
 }
 
@@ -46,13 +46,14 @@ button:hover {
 }
 
 .scorewrapper {
-    position:fixed;
+    position:relative;
     z-index:99;
     left: 1.1vw;
     top:0.5vh;
     color:white;
     font-size:1.5em;
-    font-family:sans-serif;
+    font-family:RobotoMono;
+    text-align: left;
 }
 .scorewrapper span {font-weight: initial !important;}
 
@@ -62,7 +63,7 @@ button:hover {
     left:50%;
     transform: translate(-50%, -50%);
     color:white !important;
-    font-family: sans-serif;
+    font-family: RobotoMono;
     text-align:center;
     display:none;
     padding:0.5em;
@@ -71,7 +72,8 @@ button:hover {
 }
 #gameOver h1 {font-size:4em;margin:0;}
 #gameOver p{font-size:1.5em;font-weight:1000;margin:0.75em;}
-#gameOver span{font-weight:initial;margin:0;}
+#gameOver span{font-weight:bold;margin:0;}
+#finalScore{font-weight:initial !important;}
 
 noscript {
     display:block !important;
