@@ -8,4 +8,4 @@ No district will block the creation of a student, it's bad publicity! Bored@scho
 
 ### Current games:<br>
 Platformer (v1.1)<br>
-Snake (v0.1 BETA) (In preview, not released)
+Snake (v1.0)
