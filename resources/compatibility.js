@@ -25,7 +25,7 @@ function getDeviceType() {
 		deviceType == 'iPod Simulator' ||
 		deviceType == 'BlackBerry'
 	) {incompatible = 'deviceType';}
-    console.log("Retriving device type");
+    // console.log("Retriving device type");
 }
 
 function getScreenSize() {
@@ -35,7 +35,7 @@ function getScreenSize() {
 	if (screenDimensions[1] <= 400 ) {incompatible = 'screenHeight';}
 	if (screenDimensions[0] > 550 && incompatible == 'screenWidth') {incompatible = null;}
 	if (screenDimensions[1] > 400 && incompatible == 'screenHeight') {incompatible = null;}
-    console.log("Retriving screen size");
+    // console.log("Retriving screen size");
 	compatibility();
 }
 
@@ -44,7 +44,7 @@ function compatibility() {
 	if (incompatible == 'screenHeight') {errorMessage('HEIGHT_LESS_THAN_MINIMAL')}
 	if (incompatible == 'deviceType') {errorMessage('INCOMPATIBLE_DEVICE_TYPE')}
 	setTimeout(() => {if (incompatible == null) {document.getElementById("compatibility-warn").style.display = 'none';}}, 20);
-    console.log("Checking device compatibility");
+    // console.log("Checking device compatibility");
 }
 
 function errorMessage(message) {
@@ -53,5 +53,5 @@ function errorMessage(message) {
 	//errorMessageText.innerText = message;
 	//errorMessageText.style.display = 'block';
 	document.getElementById("errormessage").innerText = message;
-	document.getElementById("compatibility-warn").style.display = 'block !important';
+	document.getElementById("compatibility-warn").style.display = 'block';
 }
