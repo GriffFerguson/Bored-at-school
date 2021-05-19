@@ -75,10 +75,9 @@ footer a:hover {
 }
 
 /* NO SCRIPT & SCREEN SIZE WARNING */
-#compatibilty-warn{display:none !important;}
-noscript, #compatibilty-warn {
+noscript, #compatibility-warn {
     display: block;
-    position:absolute;
+    position:fixed;
     width:100%;
     height:100%;
     z-index:999;
@@ -86,6 +85,7 @@ noscript, #compatibilty-warn {
 }
 
 .noscript-container, .compatibilty-cont {
+    display:inherit;
     position:absolute;
     left:50%;
     top:50%;

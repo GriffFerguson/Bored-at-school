@@ -1,9 +1,6 @@
 //TO RUN ON SITE LOAD
 window.onload = function() {
-	getScreenSize();
-	getDeviceType();
-	compatibilty();
-	console.log("window onload run")
+	console.log("Running window-load scripts");
 }
 
 //SIDE PANEL
@@ -84,45 +81,6 @@ function embedCodeCopy() {
 	navigator.clipboard.writeText(code);
 	document.getElementById("embed-copy").style.opacity = "1";
 	console.log("wrote to clipboad: " + code);
-}
-
-//DETECT SCREEN SIZE & DEVICE TYPE
-var screenDimensions = [0,0];
-var deviceType = null;
-var incompatible = null;
-
-window.addEventListener('resize', () => {getScreenSize();compatibilty();})
-
-function getDeviceType() {
-	deviceType = navigator.platform;
-	if (
-		deviceType == 'iPod' ||
-		deviceType == 'iPhone' ||
-		deviceType == 'iPad' ||
-		deviceType == 'Android' ||
-		deviceType == 'Pike v7.6 release 92' ||
-		deviceType == 'Pike v7.8 release 517' ||
-		deviceType == 'iPhone Simulator' ||
-		deviceType == 'iPad Simulator' ||
-		deviceType == 'iPod Simulator' ||
-		deviceType == 'BlackBerry'
-	) {incompatible = 'mobileDevice';}
-}
-
-function getScreenSize() {
-	screenDimensions[0] = window.innerWidth;
-	screenDimensions[1] = window.innerHeight;
-	if (screenDimensions[0] <= 550 ) {incompatible = 'screenWidth';}
-	if (screenDimensions[1] <= 400 ) {incompatible = 'screenHeight';}
-	if (screenDimensions[0] > 550 && incompatible == 'screenWidth') {incompatible = null;}
-	if (screenDimensions[1] > 400 && incompatible == 'screenHeight') {incompatible = null;}
-}
-
-function compatibilty() {
-	//if (incompatible == 'screenWidth') {alert('Screen width is not compatible')}
-	//if (incompatible == 'screenHeight') {alert('Screen height is not compatible')}
-	//if (incompatible == 'mobileDevice') {alert('Device type is not compatible');}
-	return 'WIP';
 }
 
 //Get diagnostic data
