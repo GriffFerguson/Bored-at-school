@@ -1,4 +1,3 @@
-window.onload = function() {
 var score = 0;
 var gameOver = 0;
 
@@ -116,4 +115,4 @@ setInterval (function() {
             console.log("Vertical collision");
         }
     }
-}, 85)}
+}, 85)

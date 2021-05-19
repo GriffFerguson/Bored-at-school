@@ -1,3 +1,11 @@
+//TO RUN ON SITE LOAD
+window.onload = function() {
+	getScreenSize();
+	getDeviceType();
+	compatibilty();
+	console.log("window onload run")
+}
+
 //SIDE PANEL
 function sidePanel(element, method) {
 	var panel = null;
@@ -83,11 +91,6 @@ var screenDimensions = [0,0];
 var deviceType = null;
 var incompatible = null;
 
-window.onload = function() {
-	getScreenSize();
-	getDeviceType();
-	compatibilty();
-}
 window.addEventListener('resize', () => {getScreenSize();compatibilty();})
 
 function getDeviceType() {
@@ -119,8 +122,14 @@ function compatibilty() {
 	//if (incompatible == 'screenWidth') {alert('Screen width is not compatible')}
 	//if (incompatible == 'screenHeight') {alert('Screen height is not compatible')}
 	//if (incompatible == 'mobileDevice') {alert('Device type is not compatible');}
-	return WIP;
+	return 'WIP';
 }
 
 //Get diagnostic data
-function getDiagnostics() {console.log("Diagnostic Data:\r\nDevice type: " + deviceType + "\r\nScreen width: " + screenDimensions[0] + "\r\nScreen height: " + screenDimensions[1]);return("Screen size data updated on resize & on page load; device type data retrieved on page load")}
+function getDiagnostics() {
+	console.log(
+		"Diagnostic Data:\r\nDevice type: " + deviceType + 
+		"\r\nScreen width: " + screenDimensions[0] + 
+		"\r\nScreen height: " + screenDimensions[1]);
+		return'Screen size data updated on resize & on page load; device type data retrieved on page load'
+}
