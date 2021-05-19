@@ -7,10 +7,9 @@ var incompatible = null;
 getScreenSize();
 getDeviceType();
 compatibility();
-
-//Actual functions
 window.addEventListener('resize', () => {getScreenSize();compatibility();})
 
+//Actual functions
 function getDeviceType() {
 	deviceType = navigator.platform;
 	if (
@@ -36,7 +35,6 @@ function getScreenSize() {
 	if (screenDimensions[0] > 550 && incompatible == 'screenWidth') {incompatible = null;}
 	if (screenDimensions[1] > 400 && incompatible == 'screenHeight') {incompatible = null;}
     // console.log("Retriving screen size");
-	compatibility();
 }
 
 function compatibility() {
@@ -49,9 +47,6 @@ function compatibility() {
 
 function errorMessage(message) {
 	console.log(message);
-	var errorMessageText = document.getElementById("errormessage");
-	//errorMessageText.innerText = message;
-	//errorMessageText.style.display = 'block';
 	document.getElementById("errormessage").innerText = message;
 	document.getElementById("compatibility-warn").style.display = 'block';
 }
