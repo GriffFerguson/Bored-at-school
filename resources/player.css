@@ -50,7 +50,7 @@
     font-size:1.8em;
     font-family:SourceSansPro;
     color:white;
-    white-space: nowrap;
+    white-space: pre-line;
     transition: width 500ms;
     height:40vh;
     z-index:1999;
