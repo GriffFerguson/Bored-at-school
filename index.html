@@ -13,7 +13,7 @@
 			width:80%;
 			margin-top:1.5%;
 		}
-		hr{width:95%;margin-top:1.5em;margin-bottom:1.5em;}
+		hr{width:95%;margin-top:0.25em;margin-bottom:1.5em;}
 		.games{
 			display:grid;
 			grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
@@ -27,7 +27,7 @@
 			height:51vh;
 			border:2px solid black;
 			display:grid;
-			grid-template-rows: 55% 45%;
+			grid-template-rows: 65% 35%;
 			text-decoration: none !important;
 			color: black;
 		}
@@ -57,6 +57,22 @@
 			font-weight: 1000;
 			cursor:help;
 		}
+
+		@media only screen and (max-width:1500px) {
+			.game-container{grid-template-rows: 58% 42%;}
+		}
+		@media only screen and (max-width:1300px) {
+			.games{grid-template-columns: 18vw 18vw 18vw 18vw;}
+		}
+		@media only screen and (max-width:950px) {
+			.games{grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;}
+		}
+		@media only screen and (max-width:750px) {
+			.games{grid-template-columns: 30vw 30vw 30vw;}
+		}
+		@media only screen and (max-width:600px) {
+			.games{grid-template-columns: 45vw 45vw;}
+		}
 	</style>
 </head>
 <body>
@@ -81,9 +97,9 @@
 			<a class="game-container" href="Platformer/index.html">
 				<div class="game-thumbnail">
 					<img src="Platformer/thumbnail.png" alt="Platformer">
+					<hr>
 				</div>
 				<div class="game-description">
-					<hr>
 					<h1>Platformer</h1>
 					<p>Complete the level and collect as many coins as possible!</p>
 				</div>
@@ -91,12 +107,11 @@
 			<a class="game-container" href="Snake_v1/index.html">
 				<div class="game-thumbnail">
 					<img src="Snake_v1/thumbnail.png" alt="Platformer">
+					<hr>
 				</div>
 				<div class="game-description">
-					<hr>
 					<h1>Snake</h1>
 					<p>Collect as many red circles without colliding with the edge of the screen, or colliding with yourself!</p>
-					<p class="big-tag">NEW</p>
 				</div>
 			</a>
 		</div>
