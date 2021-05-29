@@ -44,7 +44,7 @@ a:hover{text-decoration-style: double;}
 
 hr{
     background-color:black;
-    height:0.5em !important;
+    height:0.5em;
 }
 
 footer {
@@ -74,6 +74,10 @@ footer a:hover {
     color:blue;
 }
 
+footer img {
+    width:15%;
+}
+
 /* NO SCRIPT & SCREEN SIZE WARNING */
 noscript, #compatibility-warn {
     display: block;
@@ -87,12 +91,35 @@ noscript, #compatibility-warn {
 }
 
 .noscript-container, .compatibilty-cont {
-    display:inherit;
+    display:flex;
     position:absolute;
-    left:50%;
-    top:50%;
-    transform: translateX(-50%) translateY(-50%);
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding:1em;
+    overflow:scroll;
+    min-height:400px;
+}
+
+@media only screen and (max-width:1300px) {
+    .icon-large{width:4vw;height:4vw;}
+    .icon-small{width:2vw;height:2vw;}
+    .badge{font-size:1.4em;}
+    footer img {width:25%;}
+}
+@media only screen and (max-width:1000px) {
+    .icon-large{width:4.5vw;height:4.5vw;}
+    .icon-small{width:2.15vw;height:2.15vw;}
+    .badge{font-size:1.15em;}
+    footer{grid-template-columns: 42% 38% 20%;}
+    footer p{font-size: 0.7em;}
+    footer img {width:48%;}
+}
+@media only screen and (max-width:700px) {
+    footer img {width:65%;}
+    .icon-large{width:7.5vw;height:7.5vw;}
+    .icon-small{width:3.75vw;height:3.75vw;}
 }
 
 /* FONTS */
